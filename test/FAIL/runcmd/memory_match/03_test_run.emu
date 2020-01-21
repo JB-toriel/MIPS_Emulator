@@ -1,0 +1,7 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="doesn't match the memory map of .text segment"
+#-------
+
+load boucle.o
+run 0x0

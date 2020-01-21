@@ -1,0 +1,17 @@
+#-------
+#TEST_RETURN_CODE=PASS           
+#TEST_COMMENT="4 arguments corrects (word reg)"
+#-------
+
+load boucle.o
+disp mem 0x1000+31
+set reg $at 42
+assert word 42 $at
+set mem 0x1000 word 200000
+assert word 200000 0x1000
+set mem 0x1005 byte 0xfd
+assert byte 0xfd 0x1005
+set reg $at 0x43
+assert word 0x43 $at
+set mem 0x1000 word 0xaa
+assert word 0xaa 0x1000

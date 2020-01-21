@@ -1,0 +1,7 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="invalid arguments"
+#-------
+
+load boucle.o
+run -15

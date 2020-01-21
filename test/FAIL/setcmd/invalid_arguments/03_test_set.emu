@@ -1,0 +1,7 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="invalid argument"
+#-------
+
+load boucle.o
+set mem -0x15

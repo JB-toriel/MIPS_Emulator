@@ -1,0 +1,7 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="invalid argument"
+#-------
+
+load boucle.o
+disp mem 0x1000:

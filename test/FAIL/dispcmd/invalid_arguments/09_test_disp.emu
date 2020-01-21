@@ -1,0 +1,6 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="not a registre"
+#-------
+
+disp reg 0x12

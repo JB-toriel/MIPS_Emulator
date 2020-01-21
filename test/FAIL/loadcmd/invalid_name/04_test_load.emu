@@ -1,0 +1,6 @@
+#-------
+#TEST_RETURN_CODE=FAIL           
+#TEST_COMMENT="wrong arguments("nom"=nom_fichier)"
+#-------
+
+load 0x1000

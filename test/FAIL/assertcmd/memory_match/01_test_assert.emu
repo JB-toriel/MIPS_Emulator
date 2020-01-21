@@ -1,0 +1,7 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="doesn't match the memory"
+#-------
+
+load boucle.o
+assert word 15 0x10

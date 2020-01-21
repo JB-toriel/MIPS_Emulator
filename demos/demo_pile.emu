@@ -1,0 +1,37 @@
+#-------
+#TEST_RETURN_CODE=PASS           
+#TEST_COMMENT="demo pile.o"
+#-------
+
+load pile.o 0x5000
+disp mem map
+disp mem 0x5000+99
+disp mem 0x6000+99
+disp mem 0xffffeff0+15
+disp reg all
+disasm 0x5000+99
+debug
+run
+disp mem 0xffffeff0+15
+disp reg all
+debug
+step
+disp mem 0xffffeff0+15
+disp reg all
+step
+disp mem 0xffffeff0+15
+disp reg all
+break add 0x5008
+break list
+run
+disp mem 0xffffeff0+15
+disp reg all
+step
+disp mem 0xffffeff0+15
+disp reg all
+step
+step
+disp mem 0xffffeff0+15
+disp reg all
+step
+debug

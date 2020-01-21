@@ -1,0 +1,50 @@
+#-------
+#TEST_RETURN_CODE=PASS           
+#TEST_COMMENT="run boucle.o avec step"
+#-------
+
+load boucle.o
+step
+step
+disp reg all
+step
+step
+disp reg all
+step
+step
+disp reg all
+step
+step
+disp reg all
+step
+step
+disp reg all
+step
+step
+disp reg all
+step
+step
+disp reg all
+step
+step
+disp reg all
+step
+step
+disp reg all
+step
+step
+disp reg all
+step
+step
+disp reg all
+step
+step
+disp reg all
+step
+step
+disp reg all
+step
+step
+disp reg all
+debug
+

@@ -1,0 +1,6 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="no file loaded"
+#-------
+
+run 0x12

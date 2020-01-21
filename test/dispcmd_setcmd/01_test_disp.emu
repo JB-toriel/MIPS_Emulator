@@ -1,0 +1,15 @@
+#-------
+#TEST_RETURN_CODE=PASS           
+#TEST_COMMENT="set et disp"
+#-------
+
+load pile.o
+set mem 0x1023 byte 1
+set mem 0x1024 byte 0x1
+set mem 0x1025 byte -1
+set mem 0x1026 byte 11
+disp mem 0x1023+3
+disp mem 0x1023:0x1027
+
+
+

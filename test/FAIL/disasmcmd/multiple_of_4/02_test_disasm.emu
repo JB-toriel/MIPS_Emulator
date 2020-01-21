@@ -1,0 +1,7 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="range not a multiple of 4"
+#-------
+
+load boucle.o
+disasm 0x1000+0

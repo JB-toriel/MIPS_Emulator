@@ -1,0 +1,6 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="address not a multiple of 4"
+#-------
+
+break add 0x1001

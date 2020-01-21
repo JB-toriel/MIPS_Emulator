@@ -1,0 +1,6 @@
+#-------
+#TEST_RETURN_CODE=FAIL           
+#TEST_COMMENT="unknown command"
+#-------
+
+lqsh exit

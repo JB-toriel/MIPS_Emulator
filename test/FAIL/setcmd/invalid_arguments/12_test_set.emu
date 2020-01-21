@@ -1,0 +1,7 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="set mem 0x1000 byte --0x15"
+#-------
+
+load boucle.o
+set mem byte 0x1000 --0x15

@@ -1,0 +1,6 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="to many arguments"
+#-------
+
+assert byte 0x13 0x14 +0x2

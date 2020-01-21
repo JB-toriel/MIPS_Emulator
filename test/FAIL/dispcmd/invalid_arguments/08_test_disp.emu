@@ -1,0 +1,7 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="not a <range>+"
+#-------
+
+load boucle.o
+disp mem 0x1000:a

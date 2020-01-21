@@ -1,0 +1,10 @@
+#-------
+#TEST_RETURN_CODE=PASS           
+#TEST_COMMENT="run boucle.o"
+#-------
+
+load boucle.o
+disp reg all
+run
+disp reg all
+debug

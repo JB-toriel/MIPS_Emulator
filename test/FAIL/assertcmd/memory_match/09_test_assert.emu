@@ -1,0 +1,6 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="no file loaded"
+#-------
+
+assert byte 15 0x1000

@@ -1,0 +1,6 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="invalid arguments and to few"
+#-------
+
+assert word a

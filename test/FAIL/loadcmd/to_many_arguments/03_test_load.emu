@@ -1,0 +1,6 @@
+#-#-------
+#TEST_RETURN_CODE=FAIL           
+#TEST_COMMENT="to many arguments"
+#-------
+
+load boucle.o 0x1000 0

@@ -1,0 +1,7 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="doesn't match the memory"
+#-------
+
+load boucle.o
+disp mem 0x8000+0

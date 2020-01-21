@@ -1,0 +1,13 @@
+#-------
+#TEST_RETURN_CODE=PASS           
+#TEST_COMMENT="debug"
+#-------
+
+load boucle.o
+debug
+disp mem map
+disp mem 0x1000+99
+debug
+run
+debug
+disp mem 0x1000+99

@@ -1,0 +1,8 @@
+#-------
+#TEST_RETURN_CODE=PASS           
+#TEST_COMMENT="disasm boucle.o 0x4000"
+#-------
+
+load boucle.o 0x4000
+disasm 0x4000+99
+debug

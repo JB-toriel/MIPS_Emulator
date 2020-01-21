@@ -1,0 +1,7 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="value overflow"
+#-------
+
+load boucle.o
+set mem 0x1000 word 0x123456789

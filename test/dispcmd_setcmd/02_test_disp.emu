@@ -1,0 +1,13 @@
+#-------
+#TEST_RETURN_CODE=PASS           
+#TEST_COMMENT="3 arguments corrects (reg)"
+#-------
+
+set reg $zero 42
+disp reg $zero
+set reg $0 25
+set reg $at 0x04
+set reg $31 0xffffffff
+disp reg $zero $1 $31
+
+

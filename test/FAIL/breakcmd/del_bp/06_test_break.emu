@@ -1,0 +1,8 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="no break point sets at addrese = "name_address""
+#-------
+
+load boucle.o
+break add 0x1004
+break del 0x1008

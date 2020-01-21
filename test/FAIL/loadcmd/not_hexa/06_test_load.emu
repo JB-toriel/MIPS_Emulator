@@ -1,0 +1,6 @@
+#-------
+#TEST_RETURN_CODE=FAIL           
+#TEST_COMMENT="wrong arguments (not hexa)"
+#-------
+
+load boucle.o 0x1000fufs

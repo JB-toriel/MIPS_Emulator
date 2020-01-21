@@ -1,0 +1,6 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="invalid arguments"
+#-------
+
+disasm 0x1000:-0x1020

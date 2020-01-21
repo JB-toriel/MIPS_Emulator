@@ -1,0 +1,7 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="doesn't match the memory of .text segment"
+#-------
+
+load boucle.o
+disasm 0x2000+3

@@ -1,0 +1,6 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="to many arguments"
+#-------
+
+assert word 0x15 0x1000 a

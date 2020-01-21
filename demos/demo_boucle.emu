@@ -1,0 +1,43 @@
+#-------
+#TEST_RETURN_CODE=PASS           
+#TEST_COMMENT="demo boucle.o"
+#-------
+
+load boucle.o
+disp mem map
+disp mem 0x1000+99
+disp mem 0x2000+99
+disp reg all
+disasm 0x1000+99
+debug
+run
+disp reg all
+debug
+break add 0x100c
+break list
+run
+disp reg pc
+step into
+step into
+disp reg all
+debug
+run
+step
+break add 0x1008
+break list
+disp reg $t1 $10 pc
+run
+disp reg $34 $10 $t1
+run
+disp reg pc $9 $t2
+run
+break del 0x100c
+break list
+run
+run
+break del all
+break list
+run
+debug
+
+

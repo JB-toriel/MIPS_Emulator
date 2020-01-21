@@ -1,0 +1,11 @@
+#-------
+#TEST_RETURN_CODE=PASS           
+#TEST_COMMENT="run pile.o verif pile"
+#-------
+
+load pile.o 0x5000
+disp reg all
+run
+disp reg all
+debug
+

@@ -1,0 +1,7 @@
+#-------
+#TEST_RETURN_CODE=FAIL           
+#TEST_COMMENT="wrong arguments("nom"=nom_fichier) and to few arguments"
+#-------
+
+load
+

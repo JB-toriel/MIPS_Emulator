@@ -1,0 +1,6 @@
+#-------
+#TEST_RETURN_CODE=FAIL           
+#TEST_COMMENT="wrong arguments (not 32 bits hexa)"
+#-------
+
+laod boucle.o -0x123456789

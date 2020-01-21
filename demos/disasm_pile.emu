@@ -1,0 +1,8 @@
+#-------
+#TEST_RETURN_CODE=PASS           
+#TEST_COMMENT="disasm pile.o"
+#-------
+
+load pile.o 0x5000
+disasm 0x5000:0x5100
+
