@@ -1,34 +1,77 @@
-Exemple d'interpréteur
+=== .c files: ===
 
-L'exemple constitue un "Exemple". Il est donné à titre d'illustration et ce n'est donc pas parce que "c'est le prof" qui le donne qu'il faut l'utiliser tel quel sans le comprendre (voir notamment le traitement des hexa). Cela dit, il constitue une bonne base pour démarrer le projet. 
- 
-L'interpréteur utilise libreadline. Sur Linux, il faut donc installer le package de développement qui convient. Il apparaît que l'appel à lreadline n'est pas toujours suffisant pour compiler et nécessite parfois d'ajouter -lcurses selon les versions et l'état de votre OS. Ne pas hésiter à chercher sur le net ou nous consulter si vous avez des problèmes d'installation. 
-
-pour compiler la version debuggable 
-$ make debug 
-
-pour générer la documentation
-$ make doc
-
-pour nettoyer
-$ make clean
-
-pour créer une archive
-$ make archive
-
-
-pour exécuter
-
-  emulMips [fichier de scripts] 
-
-
-
-les sources se trouvent dans
 ./src/
+-Location of the most recent files and to compile
 
-les includes dans 
-./include/ 
+emulMips.c Contains the hand and all the embryo of modified code.
 
-Les fichiers de script de test se trouvent dans 
-./tests/
+function_cmd.c Contains all the functions that manage the grammar of commands
+and parsing.
+
+function.c Contains all functions for executing shell commands
+
+assfunction.c Contains all functions of assembly instructions
+
+mem.c Commands on memory
+
+is.c Command on identity type functions (except is_range)
+
+elf.c, syms.c, section.c, bits.c, types.c
+Commands for ELF files
+
+
+=== .h files: ===
+
+./include/common/
+
+notify.h No changes made.
+
+macro.h Contains all #define
+
+function_cmd.h Contains all the prototypes of the functions of function_cmd.c
+and the structure of the interpreter
+
+function.h -Contains all the prototypes of the functions of function.c
+-The structures "opc_t" and "type_t" for the disasm.
+-The prototypes of the 3 tables of function pointers (R, I, J).
+
+assfunction.h Contains all prototypes of assembly instructions
+
+mem.h - Contains all prototypes of mem.c functions
+-The structures of breakpoint, virtual machine, registers and segments
+
+is.h Prototypes of identity type functions (except is_range)
+
+./include/elf/ Contains the headers files for the proper functioning of the load
+
+=== Additional files ===
+
+./dico/
+-Location of the dictionaries used during the disasm
+
+type.txt Contains all opcodes of all functions, all types combined
+
+R.txt Contains all function codes of type R
+
+I.txt Contains all the opcodes of type I functions
+
+J.txt Contains all opcodes of type J functions
+
+./demo/
+-Location of functional test scripts
+
+./test/
+-Location of all test files
+
+
+=== === Makefile
+To start the FAIL test writing program
+$ make test
+
+to execute: ./w
+
+=== === simpleUnitTest2.sh
+Reuse of the simpleUnitTest.sh script for folder-by-folder execution with reccurtion
+
+syntax: ./simpleUnitTest2.sh test /
 
